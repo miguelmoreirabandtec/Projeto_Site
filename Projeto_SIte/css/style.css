@@ -1,8 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    border: none;
     overflow: hidden;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .fundo_pagina_1 {
     height: 100vh;
@@ -10,7 +12,8 @@ body {
     background: url(../img/estadio_spfc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;]
+    float: left;
     
 }
 .escudo_spfc {
@@ -19,13 +22,90 @@ body {
     width: 50vw;
     background: url(../img/saopaulo.png);
     background-repeat: no-repeat;
+    
 }
 .usuario {
-    height: 70vh;
-    width: 70vw;
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
     background-color: white;
+    top: 10vh;
+    right: 2vw;
+    background-size: inherit;
     background-repeat: no-repeat;
-    margin-left: 70%;
-    margin-top: -3,5em;
+    float: left;
+    
+}
+.usuario span {
+    height: 8%;
+    width: 100%;
+    float: left;
+    position: relative;
+    bottom: 0;
+    margin-top: 100px;
+}
+.usuario span a {
+    text-decoration: none;
+    color: black;
+    margin-left: 11vw;
+    margin-top: 30px;
 
+
+
+}
+.simbolo {
+    height: 30vh;
+    width: 15vw;
+    margin-left: 150px;
+    background: url(../img/simbolo.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.dados_acesso {
+    height: 90%;
+    width: 100%;
+    float: left;
+}
+.dados_acesso input {
+    height: 5%;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-style: none;
+    border: #d63031 solid 2px;
+    text-align: center;
+}
+.input_1 {
+    margin-top: -5em;
+}
+
+.dados_acesso button {
+    height: 5%;
+    width: 50%;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #d63031;
+    border-style: none;
+    border: #d63031 2px solid;
+
+}
+
+.dados_acesso button:hover{
+    background-color: black;
+    color: white;
+}
+.fundo_pagina2 {
+    height: 100vh;
+    width: 100vw;
+    background:url("../img/faixada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cadastro_cliente {
+    height: 80vh;
+    width: 30vw;
+    background-color: black;
+    text-align: center;
 }
