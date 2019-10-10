@@ -47,8 +47,9 @@ body {
 .usuario span a {
     text-decoration: none;
     color: black;
-    margin-left: 11vw;
+    margin-left: 10vw;
     margin-top: 30px;
+    font-size: 20px;
 
 
 
@@ -102,10 +103,34 @@ body {
     background:url("../img/faixada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    float: left;
 }
 .cadastro_cliente {
-    height: 80vh;
-    width: 30vw;
+    height: 50vh;
+    width: 50vw;
     background-color: black;
+    margin-left: 325px;
+    margin-top: 240px;
+    border-radius: 10px;
+    border-style: none;
+    border: #d63031 2px solid;
+    
+}
+.cadastro_cliente span a {
+    text-decoration: none;
+    color: white;
+    margin-left: 280px;
+    font-size: 20px;
+}
+
+.cadastro_cliente input {
+    height: 25px;
+    width: 210px;
+    margin-top: 18px;
+    margin-left: 230px;
+    border-radius: 10px;
+    border-style: none;
+    border: #d63031 2px solid;
     text-align: center;
 }
+
