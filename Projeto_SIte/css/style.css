@@ -133,4 +133,13 @@ body {
     border: #d63031 2px solid;
     text-align: center;
 }
+.cadastro_cliente center button {
+    height: 5%;
+    width: 20%;
+    border-radius: 10%;
+    background-color: #d63031;
+    border-style: none;
+    border: #d63031 2px solid;
+    
+}
 

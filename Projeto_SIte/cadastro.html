@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Site de Vendas São Paulo Futebol Clube</title>
+    <script type="text/javascript" src="./js/cadastro_email.js"></script>
 </head>
 
 <body>
@@ -14,22 +15,29 @@
     <!--Segunda página-->
     <div class="fundo_pagina2">
 
+        <form name="form" method="POST" action="../Projeto_SIte/cadastro.html" onsubmit="return validacao() ;">
+            <div class="cadastro_cliente">
+                <span><a href="">Abre sua conta </a></span>
+                <input type="text" placeholder="nome" name="nome">
+                <!-- Caixa de texto para cadastrar o nome-->
+                <input type="text" placeholder="sobrenome" name="sobrenome">
+                <!--Caixa de texto para cadastrar o sobrenome-->
+                <input type="text" placeholder="email" name="email">
+                <!--Caixa de texto para cadastrar o email-->
+                <input type="password" placeholder="senha" name="senha">
+                <!--Caixa de texto para cadastrar a senha-->
+                <input type="password" placeholder="confirme sua senha" name="senha2"> <br> <br>
+                <!-- Caixa de texto para confirmar senha  -->
+                <center> <button type="submit" name="submit" >Cadastra-se</button> </center>
 
-        <div class="cadastro_cliente">
-            <span><a href="">Abre sua conta </a></span>
-            <input type="text" placeholder="nome">
-            <input type="text" placeholder="sobrenome">
-            <input type="text" placeholder="email">
-            <input type="password" placeholder="senha">
-            <input type="password" placeholder="confirme sua senha"> <br> <br>
-            <span><a href="">Cadastra-se</a></span>
+            </div>
+        </form>
 
-        </div>
-        
 
 
 
     </div>
 </body>
+
 
 </html>
