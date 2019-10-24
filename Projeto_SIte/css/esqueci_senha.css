@@ -18,11 +18,14 @@ body {
 
 }
 .dados_usuario{
-    background-color:rgba(34, 47, 62,1.0);
+    background-color:rgba(0, 0, 0, 0.52);
     height: 30vh;
     width: 50vw;
     margin-top: 160px;
     margin-left: 25%;
+    border-radius: 10px;
+    border-style: none;
+    border: black 3px solid;
     
 }
 .dados_usuario input {
