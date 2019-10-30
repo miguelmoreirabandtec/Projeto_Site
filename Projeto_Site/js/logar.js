@@ -1,10 +1,13 @@
 function logar() {
-    if ((!form.email.value == 'admin.admin@gmail.com' && form.senha.value == '12345678') || (form.email.value == 'admin.admin@gmail.com' || form.senha.value == '12345678')) {
+    if ((!email.value == 'admin.admin@gmail.com' && senha.value == '12345678') || (email.value == 'admin.admin@gmail.com' || senha.value == '12345678')) {
 
-        if (form.email.value == 'admin.admin@gmail.com' && form.senha.value == '12345678') {
-            return alert(`Seja bem vindo tricolor`);
+        if (email.value == 'admin.admin@gmail.com' && senha.value == '12345678') {
+             alert(`Seja bem vindo tricolor`);
+            location.href = "./venda_ingressos.html";
 
 
+        } else {
+            alert('E-mail ou senha inválidos');
         }
     }
 }

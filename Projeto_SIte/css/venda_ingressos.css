@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.pagina_ingressos {
+    height: 100vh;
+    width: 100vw;
+    background:url(../img/ingresso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+.pagina_ingressos h2 {
+    margin-left: 20px;
+    font-size: 50px;
+    margin-top: 10px;
+    position: relative;
+}
+.posicao_dos_ingressos {
+    height: 80vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.52);
+    margin-left: 20px;
+}
+.posicao_dos_ingressos h4 {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.configVenda{
+    
+    width: 50%;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    font-size: 19px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 5px;
+
+}
+.configVenda select {
+    float: right;
+}
+
+.total_ingressos_compras{
+    width: 20vw;
+    height: 70vh;
+    background-color: red;
+    float: left;
+    margin-left: 10px;
+    margin-top: -377px;
+    border-radius: 10px;
+}
+.total_ingressos_compras h3{
+    margin-left: 110px;
+}
+.total_ingressos_compras button{
+    width: 100px;
+    margin-left: 90px;
+    margin-top: 365px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000;
+    border-style: none;
+    border: #d4d4d4 2px solid;
+    font-size: 95%;
+}
+
+.total_ingressos_compras button:hover{
+background-color: rgb(238, 103, 13);
+    color: white;
+}
+
+
