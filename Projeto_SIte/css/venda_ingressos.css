@@ -51,13 +51,21 @@ body {
 }
 
 .total_ingressos_compras{
+    position: relative;
+    float: right;
+    right: 2%;
+    bottom: 230px;
     width: 20vw;
+    height: 65vh;
+    background-color: red;
+  
+    /* width: 20vw;
     height: 70vh;
     background-color: red;
     float: left;
     margin-left: 10px;
     margin-top: -377px;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 .total_ingressos_compras h3{
     margin-left: 110px;
@@ -81,11 +89,9 @@ background-color: rgb(238, 103, 13);
 .acumulo {
     position: relative;
     right: 10%;
-    margin-top: 20%;
+    top: 20%;
     float: right;
     width: 15vw;
     height: 20vh;
     border: 2px solid white;
 }
-
-

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/venda_ingressos.css">
     <title>Site de Vendas São Paulo Futebol Clube</title>
-    <script type="text/javascript" src="./js/vendas_ingressos.js"></script>
+    <script type="text/javascript" src="js/venda_ingressos.js"></script>
 </head>
 
 <body>
@@ -29,19 +29,19 @@
 
 
 
-        <div class="posicao_dos_ingressos"><br>
+        <div id="posis" class="posicao_dos_ingressos"><br> 
             <h4>Setores Disponíveis</h4> <br>
 
 
             <div class="configVenda" draggable="true">
                 Setor Norte
-                <select name="Ingressos" id="quantidade_ingressos">
-                    <option value="">0</option>
-                    <option value="30">1</option>
-                    <option value="60">2</option>
-                    <option value="90">3</option>
-                    <option value="120">4</option>
-                    <option value="150">5</option>
+                <select name="Ingressos" id="quantidade_ingressos1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
 
@@ -50,12 +50,12 @@
             <div class="configVenda" draggable="true">
                 Setor Norte-Meia
                 <select name="Ingressos" id="quantidade_ingressos2">
-                    <option value="">0</option>
-                    <option value="15">1</option>
-                    <option value="30">2</option>
-                    <option value="45">3</option>
-                    <option value="60">4</option>
-                    <option value="75">5</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
 
@@ -65,12 +65,12 @@
             <div class="configVenda" draggable="true">
                 Setor Sul
                 <select name="Ingressos" id="quantidade_ingressos3">
-                    <option value="">0</option>
-                    <option value="50">1</option>
-                    <option value="100">2</option>
-                    <option value="150">3</option>
-                    <option value="200">4</option>
-                    <option value="250">5</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
 
@@ -79,51 +79,28 @@
             <div class="configVenda" draggable="true">
                 Setor Sul-Meia
                 <select name="Ingressos" id="quantidade_ingressos4">
-                    <option value="">0</option>
-                    <option value="25">1</option>
-                    <option value="50">2</option>
-                    <option value="75">3</option>
-                    <option value="100">4</option>
-                    <option value="125">5</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
 
 
 
-            <div class="configVenda" draggable="true">
-                Setor Leste
-                <select name="Ingressos" id="quantidade_ingressos4">
-                    <option value="">0</option>
-                    <option value="30">1</option>
-                    <option value="60">2</option>
-                    <option value="90">3</option>
-                    <option value="120">4</option>
-                    <option value="150">5</option>
-                </select>
-            </div>
-
-
-
-            <div class="configVenda" draggable="true">
-                Setor Leste-Meia
-                <select name="Ingressos" id="quantidade_ingressos4">
-                    <option value="">0</option>
-                    <option value="15">1</option>
-                    <option value="30">2</option>
-                    <option value="45">3</option>
-                    <option value="60">4</option>
-                    <option value="75">5</option>
-                </select>
-            </div>
-
-
+            
 
             <div class="total_ingressos_compras">
 
                 <h3>Total</h3>
-                <div class="acumulo">Quantidade de Ingressos</div>
+                <div id="acumu" class="acumulo"> Valor á pagar: <b id="qnt">0</b>
+                </div>
                 <button onclick="compra()">Comprar</button>
             </div>
+
+            
 
         </div>
 
