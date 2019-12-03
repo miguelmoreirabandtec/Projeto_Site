@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="questao">
+        1) Queda de produtividade: <br>
+        <select class="frmlog_estresse" id="quantidade_ingressos4">
+            <option>--selecione--</option>
+            <option value="1">Raramente</option>
+            <option value="2">Às vezes</option>
+            <option value="3">Sempre</option>
+        </select>
+    </div>
+
+    <div class="questao">
+        1) Queda de produtividade: <br>
+        <select class="frmlog_estresse" id="quantidade_ingressos3">
+            <option>--selecione--</option>
+            <option value="1">Raramente</option>
+            <option value="2">Às vezes</option>
+            <option value="3">Sempre</option>
+        </select>
+    </div>
+    <button onclick="total()">lalala</button>
+    <div id="mensagem"></div>
+    <div id="mensagem1"></div>
+    <div id="mensagem2" style="display: none;"></div>
+
+
+</body>
+
+</html>
+<script>
+
+
+
+    function total() {
+
+        var soma = Number(quantidade_ingressos4.value) * Number(50);
+        var soma1 = Number(quantidade_ingressos3.value) * Number(25);
+        // var somat = soma;
+        // var soma1t = soma1;
+        mensagem.innerHTML = ` ingressos jogOA${soma}`;
+        mensagem.innerHTML = ` ingressos jogOB${soma1}`;
+
+        console.log(soma, soma1)
+        var total = Number(soma + soma1);
+
+        console.log('valor da soma: ', total)
+        mensagem2.innerHTML = `Total: ${total}`
+
+    }
+
+
+</script>

@@ -79,6 +79,7 @@ body {
 }
 .input_1 {
     margin-top: -5em;
+    outline: 0;
 }
 
 .dados_acesso button {
@@ -109,3 +110,9 @@ body {
     color: black;
    
 }
+.alert {
+    position: relative;
+    float: right;
+    right: 30%;
+    top: 5%;
+} 

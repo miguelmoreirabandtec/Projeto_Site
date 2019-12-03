@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/venda_ingressos.css">
     <title>Site de Vendas São Paulo Futebol Clube</title>
     <script type="text/javascript" src="js/venda_ingressos.js"></script>
-    
+
 </head>
 
 <body>
@@ -37,6 +37,7 @@
             <div class="configVenda" draggable="true">
                 Setor Norte
                 <select name="Ingressos" id="quantidade_ingressos1">
+
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -93,7 +94,7 @@
 
 
 
-            <div class="total_ingressos_compras">
+            <div id="mensagem" class="total_ingressos_compras">
 
                 <h3>Total</h3>
                 <div id="acumu" class="acumulo"> Valor á pagar: <div id="qnt"><b>0</b></div>
@@ -109,20 +110,7 @@
 
     </div>
 
-    <div class="modal-body">
-        <div class="box">
-            <div class="content">
-                <div class="error"></div>
-                <div class="form loginBox">
-                    <form id="form_login" method="post" onsubmit="return entrar()">
-                        <input class="form-control" type="text" placeholder="Login" name="login">
-                        <br>
-                        <input class="form-control" type="password" placeholder="Senha" name="senha">
-                        <br>
-                    </form>
-                </div>
-            </div>
-        </div>
+
 
 
 </body>
