@@ -23,14 +23,18 @@ function analisar() {
 }
 
 function compra() {
+    if (quantidade_ingressos1.value == 0 && quantidade_ingressos2.value == 0 && quantidade_ingressos3.value == 0 && quantidade_ingressos4.value == 0) {
+        alert('Para efetuar uma compra é necessário selecionar um tipo de ingresso.')
+    } else {
 
-    id01.style.display = 'block';
-
+        id01.style.display = 'block';
+    }
 
 }
 
 
 function finalizado() {
+
     myModal1.style.display = 'block';
     id01.style.display = 'none';
 
@@ -51,6 +55,13 @@ function finalizado() {
             myModal1.style.display = "none";
         }
     }
+
+
+
+} 
+
+function finalizar(){
+    
 }
 
 

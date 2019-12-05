@@ -56,11 +56,11 @@ body {
 }
 .simbolo {
     height: 30vh;
-    width: 15vw;
-    margin-left: 150px;
-    background: url(../img/simbolo.png);
+    width: 20vw;
+    margin-left:25px;
+    background: url(../img/spfc.png);
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .dados_acesso {
     height: 90%;
