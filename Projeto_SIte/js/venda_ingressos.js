@@ -24,13 +24,34 @@ function analisar() {
 
 function compra() {
 
-    lala.style.display = 'block'
+    id01.style.display = 'block';
+
 
 }
 
 
+function finalizado() {
+    myModal1.style.display = 'block';
+    id01.style.display = 'none';
 
 
+
+
+    var modal = document.getElementById("myModal1");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    // Quando o usuário clicar em <span> (x), feche o modal
+    span.onclick = function () {
+        myModal1.style.display = "none";
+    }
+    // Quando o usuário clicar em qualquer lugar fora do modal ele fecha
+    window.onclick = function (event) {
+        if (event.target == myModal1) {
+            myModal1.style.display = "none";
+        }
+    }
+}
 
 
 
