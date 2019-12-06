@@ -75,19 +75,20 @@ body {
 .total_ingressos_compras button{
     position: absolute;
     width: 80%;
-    height: 20;
+    height: 20%;
     margin-left: 150%;
     margin-top: -10px;
-    border-radius: 30%;
+    border-radius: 50px;
     color: white;
     background-color: #000000;
     border-style: none;
     border: #d4d4d4 2px solid;
     font-size: 95%;
+    outline: 0;
 }
 
 .total_ingressos_compras button:hover{
-background-color: rgb(238, 103, 13);
+background-color: rgb(238, 13, 13);
     color: white;
 }
 .acumulo {

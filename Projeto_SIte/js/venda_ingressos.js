@@ -7,7 +7,7 @@ function analisar() {
     // var soma1t = soma1;
 
 
-    qnt.innerHTML = ` Setor Norte: R$${soma1.toFixed(2)}<br>
+    qnt.innerHTML = `Setor Norte: R$${soma1.toFixed(2)}<br>
     Setor Norte-Meia: R$${soma2.toFixed(2)}<br>
     Setor Sul: R$${soma3.toFixed(2)}<br>
     Setor Sul-Meia: R$${soma4.toFixed(2)}`;
@@ -16,7 +16,7 @@ function analisar() {
     var total = Number(soma1 + soma2 + soma3 + soma4);
 
     console.log('valor da soma: ', total)
-    qnt.innerHTML += `<br>Total: R$${total.toFixed(2)}`
+    qnt.innerHTML += `<b><br>Total: R$${total.toFixed(2)}<b>`
 
 
 
@@ -34,6 +34,10 @@ function compra() {
 
 
 function finalizado() {
+
+
+
+
 
     myModal1.style.display = 'block';
     id01.style.display = 'none';
@@ -56,17 +60,47 @@ function finalizado() {
         }
     }
 
+    var cart = Number(cartao.value);
+    var name = nome.value;
+    var codigo = Number(cod.value);
+    var data = Number(date.value);
 
 
-} 
 
-function finalizar(){
-    
+
+
+    if (cart < 16) {
+        alert('Digite o número do seu cartão')
+        id01.style.display = 'block';
+        myModal1.style.display = "none";
+
+    }
+    if (name == '') {
+
+        alert('Digite o seu nome')
+        id01.style.display = 'block';
+        myModal1.style.display = "none";
+    }
+    if (codigo < 3) {
+        alert('Digite o código de segurança do seu cartão')
+        id01.style.display = 'block';
+        myModal1.style.display = "none";
+    }
+    if (data == '') {
+
+        alert('Digite o data de vencimento do seu cartão')
+        id01.style.display = 'block';
+        myModal1.style.display = "none";
+    }
+
+
+
+
+
+
+
+
 }
-
-
-
-
 
 
 

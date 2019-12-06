@@ -117,22 +117,22 @@
 
             <div class="w3-center"><br>
                 <span onclick="document.getElementById('id01').style.display='none' 
-                " class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-                <img src="img/spfc1.png" alt="Avatar" style="width:30%; border-radius: 2px;"
-                    class="w3-circle w3-margin-top">
+                " class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                    title="Close Modal">&times;</span>
+                <img src="img/spfc1.png" alt="Avatar" style="width:30%; border-radius: 2px;" class="w3-circle w3-margin-top">
             </div>
 
-            <form class="w3-container" method="POST" action="" onsubmit="return finalizar() ;">
+            <form name="lala" class="w3-container" method="POST" onsubmit="return finalizar()">
                 <div class="w3-section">
                     <label><b>Número do cartão</b></label>
                     <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Número do cartão"
-                        name="cartao" required>
+                        id="cartao">
                     <label><b>Nome do titular</b></label>
-                    <input class="w3-input w3-border" type="text" placeholder="Nome do Titular" name="nome" required>
+                    <input class="w3-input w3-border" type="text" placeholder="Nome do Titular" id="nome" required>
                     <label><b>Código de segurança</b></label>
-                    <input class="w3-input w3-border" type="number" placeholder="Nome do Titular" name="cod" required>
+                    <input class="w3-input w3-border" type="number" placeholder="Nome do Titular" id="cod">
                     <label><b>Data de validade</b></label>
-                    <input class="w3-input w3-border" type="text" placeholder="Data de validade" name="date" required>
+                    <input class="w3-input w3-border" type="text" placeholder="Data de validade" id="date">
 
 
                 </div>
@@ -152,8 +152,8 @@
             <img src="./img/success.png" alt=""> <br> <br>
             <b>Compra Finalizada</b>
             <div class="modal" id="modalFi">
+            </div>
         </div>
-    </div>
 
 
 
