@@ -16,37 +16,41 @@ body {
     float: left;
 }
 .pagina_ingressos h2 {
-    margin-left: 5%;
+    margin-left: 1%;
     font-size: 300%;
     margin-top: 1%;
     position: relative;
 }
 .posicao_dos_ingressos {
     height: 95vh;
-    width: 50vw;
+    width: 900px;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.52);
-    margin-left: 25%;
-    margin-top: -80px;
+    margin-top: -85px;
 }
 .posicao_dos_ingressos h4 {
     color: white;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-bottom: 3%;
     font-size: 150%;
     margin-top: 1%;
 }
 .configVenda{
     position: relative;
-    width: 50%;
+    width: 400px;
     color: white;
     background-color: red;
-    padding: 7%;
+    padding: 7px;
     font-size: 19px;
     border-radius: 10px;
     float: left;
     margin-top: 5px;
+    margin-bottom: 10px;
     top: 30%;
 
+}
+.configVenda2{
+    margin-right: 5%;
 }
 .configVenda select {
     float: right;
@@ -55,6 +59,7 @@ body {
 .total_ingressos_compras{
     position: relative;
     float: right;
+  
     right: 60%;
     bottom: -10px;
     width: 20vw;

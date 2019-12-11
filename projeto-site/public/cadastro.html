@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/cadastro.css">
     <title>Site de Vendas São Paulo Futebol Clube</title>
-    <script type="text/javascript" src="./js/cadastro_email.js"></script>
+    <!-- <script type="text/javascript" src="./js/cadastro_email.js"></script> -->
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <!--Segunda página-->
     <div class="fundo_pagina2">
 
-        <form name="form" method="POST" action="./usuario.html" onsubmit="return validacao() ;">
+        <form name="form"  id= "form_cadastro" method="post"  onsubmit="return cadastrar() ;">
             <div class="cadastro_cliente">
                 <span><a href="">Abre sua conta </a></span>
                 <input type="text" placeholder="nome" name="nome">
@@ -28,7 +28,7 @@
                 <!--Caixa de texto para cadastrar a senha-->
                 <input type="password" placeholder="confirme sua senha" name="senha2"> <br> <br>
                 <!-- Caixa de texto para confirmar senha  -->
-                <center> <button type="submit" name="submit" >Cadastra-se</button> </center>
+                <center> <button name="submit" id="btn_entrar" >Cadastra-se</button> </center>
 
             </div>
         </form>
@@ -41,3 +41,32 @@
 
 
 </html>
+
+<script>
+
+    function cadastrar() {
+       
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='index.html';
+
+            } else {
+
+               alert('Chegou aqui')
+                
+              
+            }
+        });
+
+        return false;
+    }
+
+    
+
+</script>
